@@ -1,0 +1,27 @@
+.toolbar {
+    font-family: 'Nunito Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: hsl(209, 23%, 22%);
+    height: 56px;
+}
+
+.toolbar_navigation{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.toolbar_logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.spacer {
+    flex: 1;
+}
