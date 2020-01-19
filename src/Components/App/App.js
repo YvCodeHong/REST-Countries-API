@@ -1,21 +1,18 @@
 import React from 'react';
 import './App.css';
-import Countries from '../Countries/Countries';
 import Toolbar from '../Toolbar/Toolbar';
 import SearchBar from '../SearchBar/SearchBar';
+import Countries from '../Countries/Countries';
+
 
 class App extends React.Component {
     render() {
         return (
             <div className="App">
                 <Toolbar />
-                <main style={{ marginTop: '56px' }}></main>
-                <SearchBar />
-        
-             <header className="App-header">
-                    <h1>REST Countries API</h1>
+                    <main style={{ marginTop: '56px' }}></main>
+                    <SearchBar />
                     <Countries />
-                </header>
             </div>
         )
     }

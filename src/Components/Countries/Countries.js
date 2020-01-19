@@ -3,7 +3,7 @@ import './Countries.css';
 
 
 const countries = {
-    imageSrc: '',
+    imageSrc: './greatBritain.png',
     country: 'United Kingdom',
     population: "600,000",
     region: "Europe",
@@ -15,20 +15,21 @@ class Countries extends React.Component {
         return (
             <div className="Countries">
                 <div class="image-container">
-                
+                   <img src='./greatBritain.png' alt="great britain" />
                 </div>
                 <h2>{countries.country}</h2>
                 <div className="Countries-information" >
+                    <div className="Country-information">
+                        <p>{countries.population}</p>
+                        <p>{countries.region}</p>
+                        <p>{countries.capital}</p>
                     </div>
-                    <div className={countries.population}>
-                    <div className={countries.region}>
-                        <div className={countries.capital}>
-                        </div>
-                    </div>  
                 </div>
-                </div>
+            </div>
         )
     }
 }
 
 export default Countries;
+
+
