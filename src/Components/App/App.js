@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Toolbar from '../Toolbar/Toolbar';
 import SearchBar from '../SearchBar/SearchBar';
-import Countries from '../Countries/Countries';
+import Listcountries from '../Listcountries/Listcountries';
 
 
 class App extends React.Component {
@@ -12,7 +12,7 @@ class App extends React.Component {
                 <Toolbar />
                     <main style={{ marginTop: '56px' }}></main>
                     <SearchBar />
-                    <Countries />
+                    <Listcountries />
             </div>
         )
     }
