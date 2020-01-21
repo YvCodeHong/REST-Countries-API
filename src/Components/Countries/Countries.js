@@ -2,27 +2,20 @@ import React from 'react';
 import './Countries.css';
 
 
-const countries = {
-    imageSrc: './greatBritain.png',
-    country: 'United Kingdom',
-    population: "600,000",
-    region: "Europe",
-    capital: "London"
-};
-
 class Countries extends React.Component {
     render() {
+        const { countries } = this.props;
         return (
             <div className="Countries">
                 <div class="image-container">
                    <img src='./greatBritain.png' alt="great britain" />
                 </div>
-                <h2>{countries.country}</h2>
+                <h2>{countries.nation}</h2>
                 <div className="Countries-information" >
                     <div className="Country-information">
-                        <p>{countries.population}</p>
-                        <p>{countries.region}</p>
-                        <p>{countries.capital}</p>
+                        <p>Population:{countries.population}</p>
+                        <p>Region: {countries.region}</p>
+                        <p>Capital: {countries.capital}</p>
                     </div>
                 </div>
             </div>

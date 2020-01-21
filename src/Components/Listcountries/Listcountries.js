@@ -6,10 +6,11 @@ class Listcountries extends React.Component {
     render() {
         return (
           <div className="Listcountries">
-                <Countries />
-                <Countries />
-                <Countries />
-                <Countries />
+                {
+                    this.props.recordCountries.map((countries) => {
+                         return <Countries countries={countries} />;   
+                    })
+                }
         </div>
         )
     }
