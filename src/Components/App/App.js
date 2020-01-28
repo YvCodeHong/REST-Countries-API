@@ -16,12 +16,16 @@ const countries = {
 const recordCountries = [countries, countries, countries, countries];
 
 class App extends React.Component {
+    searchCountries(country) {
+        console.log(`You are searching for ${country}`);
+
+    }
     render() {
         return (
             <div className="App">
                 <Toolbar />
                     <main style={{ marginTop: '56px' }}></main>
-                    <SearchBar />
+                    <SearchBar searchCountries={this.searchCountries} />
                     <Listcountries recordCountries={recordCountries}/>
             </div>
         )

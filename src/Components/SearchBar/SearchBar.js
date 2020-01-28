@@ -9,6 +9,12 @@ class SearchBar extends React.Component {
         };
 
        this.handleCountryChange = this.handleCountryChange.bind(this);
+       this.handleSearch = this.handleSearch.bind(this);
+    }
+
+    handleSearch(event) {
+        this.props.searchCountries(this.state.country);
+        event.preventDefault();
     }
 
     handleCountryChange(event) {
